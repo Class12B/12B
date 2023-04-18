@@ -1,74 +1,222 @@
 <!doctype html>
 <html>
 <head>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<link href="mycss.css" rel="stylesheet" type="text/css">
-<link rel="shortcut icon" href="mercedes-benz-logo.svg" type="image/x-icon">
-<meta charset="utf-8">
-<title>Mercedes-Benz</title>
-</head>
-<body>
-    <header>
-        <a href="SitePrincipal.html"><img src="mercedes-benz-logo.svg" class="header"></a>
-        <nav> <ul class = "navig">
-                    <li><a href = "istorie.html" >Istorie</a></li>
-                    <li><a style="margin-left: 15px;" href = "mercedes_site.html">Modele</a></li>
-					<li><a style="margin-left: 25px;" href = "SitePrincipal.html#stiri">Stiri</a></li>
-			
-              </ul></nav>
-        <p></p>
-    </header>
-	<br>
-	<div class="align">
-		<div class="modelare">
-		<p class="text">Modelăm viitorul mobilității.</p>
-			<p class="text1">Ne concentrăm pe cele patru mari tendințe de mobilitate ale viitorului.</p>
-			<img class="poza" src="masina_viitor.jpeg">
+	<meta charset="utf-8">
+	<link rel="icon" href="elixir-flavicon.png">
+	<title>ELIXIR.GG</title>
+	<link rel="stylesheet" href="main-page.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;400;500&display=swap" rel="stylesheet"> 
+	</head>
+	<body id="img">
+	<header>
+		<p class="logo">ELIXIR.GG</p>
+		<nav>
+			<ul class="nav_links">
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="champs.html">GUIDES</a></li>
+				<li><a href="index.html#tierlist">TIER LIST</a></li>
+				<li><button class="pro-button" onClick="parent.location='pro.html'">PRO</button></li>
+		</ul>
+		</nav>
+	</header>
+	 <a id="buton" href="#"><button class="scroll-buton"><img class="poza-buton" src ="sageata.png" alt="scroll-top"></button></a>
+	<script src="main.js"></script>
+	<div class="main-page">
+	<h1 class="title-text" align="center">ELIXIR.GG</h1>
+		<p class="subtitle-text" align="center">BE THE <span class="best">BEST</span> SUPPORT ON THE RIFT!</p>
+	<button class="button-start" onClick="parent.location='champs.html'">START NOW</button>
+	</div>
+	<div class="league">
+	</div>
+	
+	<div style="margin-bottom: 100px;">
+		<div class="containter-video">
+			<div class="div-bg">
+			<p class="title-league">WHAT IS <span style="color: #6b5ed4;">LEAGUE OF LEGENDS</span>?</p>
+			<div class="what-div-grid">
+				<div class="what-div1">
+					<video muted autoplay loop class="video">
+						<source src="video.mp4" type="video/mp4">;
+					</video>
+				</div>
+				<div>
+					<p class="text-video"><span style="color: #6b5ed4;">League of Legends</span> is a team-based strategy game <br> where two teams of five powerful champions <br>face off to destroy the other’s base.
+						<br><br>
+						Choose from over <span style="color: #6b5ed4;">140 champions</span> to make epic plays,<br> secure kills, and take down towers as you battle <br>your way to victory.
+						<br><br>
+						<a class="a-off" href="https://www.leagueoflegends.com/" target="_blank" style="font-size: 20px; color: #6b5ed4;">Official League Site &#8594</a>
+					</p>
+				</div>
+			</div>
+		</div></div>
+	</div>
+	
+	<div class="boxes">
+		<div class="featured">
+			<div class="featured-text">
+				<div class="txt-stanga">
+					<p style="
+						margin-bottom: 0px;
+						margin-top: 0px;	
+						font-weight: 700;
+					">FEATURED CHAMPIONS</p>
+					<p style="
+						margin-top: 0px;
+						font-size: 21px;	
+						color: #6b5ed4;
+					">Our top picks for support!</p>
+				</div>
+				<p style="text-align: right; 	margin-top: 0px;"><a class="txt-dreapta" href="champs.html">ALL SUPPORTS &#8594</a></p>
+			</div>
+			<div class="boxes">
+				<div class="box">
+					<a href="champion-guide-zyra.html"><img class="thumb" src="thumbnail champion/thumb_2.png" alt="zyra"></a>
+				</div>
+				<div class="box">
+					<a href="champion-guide-morgana.html"><img class="thumb" src="thumbnail champion/thumb_1.png" alt="morgana"></a>
+				</div>
+				<div class="box">
+					<a href="champion-guide-maokai.html"><img class="thumb" src="thumbnail champion/thumb_3.png" alt="malphite"></a>
+				</div>
+			</div>
 		</div>
 	</div>
-	<br>
-			<div class="align">
-			<div class="poza-text">
-				<div><img id="stiri" src="masina_viitor2.webp" class="poza1"></div>
-				<div class="text-poza"><p><span>Ne concentrăm pe cele patru mari tendințe de mobilitate ale viitorului.</span><br>
-Ca pionieri ai industriei automobilelor tindem spre inovații pentru o mobilitate care să protejeze resursele. Descoperiți ideile și soluțiile noastre pentru condusul complet autonom, concepte flexibile de mobilitate, mobilitate electrică și conectare digitală în rețea.</p></div>
-			</div>
+	<br><br>
+	<div class="container-tierlist" id="tierlist">
+		<div class="tierlist">
+			<p class="tierlist-title" style="margin-bottom: 15px; padding-left: 10px;">TIER <span class="list">LIST</span></p>
+			<p class="s">S TIER</p>
+			<div class="S-tier">
+				<div class="champ">
+					<img class="champ-pic-s" src="champions/zyra.jpg" alt="pic">
+					<p align="center">ZYRA</p>
 				</div>
-		<div class="align">
-			<div>	
-				<div><p class="stiri">Stiri</p><p class="Sport">Mercedes-Benz impulsioneaza tranzitia sustenabila in sporturile cu motor.</p><p class="text-sport">Noi transferăm sustenabilitate în sporturile cu motor și forțăm pași ambițioși în direcția emisiilor neutre de carbon.</p></div>
-				<div><img  class="poza" src="masina_sport.jpeg"></div>
+				<div class="champ">
+					<img class="champ-pic-s" src="champions/pyke.jpg" alt="pic">
+					<p align="center">PYKE</p>
+				</div>
+				<div class="champ">
+					<img class="champ-pic-s" src="champions/maokai.jpg" alt="pic">
+					<p align="center">MAOKAI</p>
+				</div>
+				<div class="champ">
+					<img class="champ-pic-s" src="champions/blitzcrank.jpg" alt="pic">
+					<p align="center">BLITZCRANK</p>
+				</div>
+				<div class="champ">
+					<img class="champ-pic-s" src="champions/sona.jpg" alt="pic">
+					<p align="center">SONA</p>
+				</div>
+				<div class="champ">
+					<img class="champ-pic-s" src="champions/leona.jpg" alt="pic">
+					<p align="center">LEONA</p>
+				</div>
+				<div class="champ">
+					<img class="champ-pic-s" src="champions/brand.jpg" alt="pic">
+					<p align="center">BRAND</p>
+				</div>
 			</div>
-</div>
-		<div class="align">
-		<div>
-			<div><p class="stiri" id="Istorie" >Istorie</p><p class="text-istorie">Mercedes-Benz, denumită în mod obișnuit Mercedes și uneori Benz, este o marcă germană de autovehicule de lux și comerciale înființată în 1926.  Din noiembrie 2019, vehiculele comerciale grele (camioane și autobuze) cu emblema Mercedes-Benz sunt administrate de Daimler Truck, o fostă parte a grupului Mercedes-Benz transformată într-o companie independentă la sfârșitul anului 2021. În 2018, Mercedes-Benz a fost cea mai mare marcă de vehicule premium din lume, având vândute 2,31 milioane de mașini de pasageri.
-
-Originile mărcii se află în Mercedes-ul 1901 de la Daimler-Motoren-Gesellschaft și Benz Patent-Motorwagen 1886 de la Karl Benz, care este considerat primul motor cu ardere internă dintr-un automobil autopropulsat. Sloganul mărcii este „cel mai bun sau nimic”. &nbsp; <a href="istorie.html">Citește mai mult...</a></p>
-
-				<div class="poza-istorie"> <img class="poza-src" src="masina_veche.png"></div>
-			
+			<p class="litera">A TIER</p>
+			<div class="A-tier">
+				<div class="champ">
+					<img class="champ-pic" src="champions/soraka.jpg" alt="pic">
+					<p align="center">SORAKA</p>
+				</div>
+				<div class="champ">
+					<img class="champ-pic" src="champions/senna.jpg" alt="pic">
+					<p align="center">SENNA</p>
+				</div>
+				<div class="champ">
+					<img class="champ-pic" src="champions/morgana.jpg" alt="pic">
+					<p align="center">MORGANA</p>
+				</div>
+				<div class="champ">
+					<img class="champ-pic" src="champions/nautilus.jpg" alt="pic">
+					<p align="center">NAUTILUS</p>
+				</div>
+				<div class="champ">
+					<img class="champ-pic" src="champions/thresh.jpg" alt="pic">
+					<p align="center">THRESH</p>
+				</div>
+				<div class="champ">
+					<img class="champ-pic" src="champions/karma.jpg" alt="pic">
+					<p align="center">KARMA</p>
+				</div>
+				<div class="champ">
+					<img class="champ-pic" src="champions/lux.jpg" alt="pic">
+					<p align="center">LUX</p>
+				</div>
 			</div>
-			
+			<p class="litera">B TIER</p>
+			<div class="B-tier">
+				<div class="champ">
+					<img class="champ-pic" src="champions/malphite.jpg" alt="pic">
+					<p align="center">MALPHITE</p>
+				</div>
+				<div class="champ">
+					<img class="champ-pic" src="champions/lulu.jpg" alt="pic">
+					<p align="center">LULU</p>
+				</div>
+				<div class="champ">
+					<img class="champ-pic" src="champions/rakan.jpg" alt="pic">
+					<p align="center">RAKAN</p>
+				</div>
+				<div class="champ">
+					<img class="champ-pic" src="champions/swain.jpg" alt="pic">
+					<p align="center">SWAIN</p>
+				</div>
+				<div class="champ">
+					<img class="champ-pic" src="champions/xerath.jpg" alt="pic">
+					<p align="center">XERATH</p>
+				</div>
+				<div class="champ">
+					<img class="champ-pic" src="champions/taric.jpg" alt="pic">
+					<p align="center">TARIC</p>
+				</div>
+				<div class="champ">
+					<img class="champ-pic" src="champions/rell.jpg" alt="pic">
+					<p align="center">RELL</p>
+				</div>
+				<div class="champ">
+					<img class="champ-pic" src="champions/nami.jpg" alt="pic">
+					<p align="center">NAMI</p>
+				</div>
 			</div>
+			<p class="litera">C TIER</p>
+			<div class="C-tier">
+			<div class="champ">
+					<img class="champ-pic" src="champions/alistar.jpg" alt="pic">
+					<p align="center">ALISTAR</p>
+				</div>
+			<div class="champ">
+					<img class="champ-pic" src="champions/yuumi.jpg" alt="pic">
+					<p align="center">YUUMI</p>
+				</div>
+			<div class="champ">
+					<img class="champ-pic" src="champions/braum.jpg" alt="pic">
+					<p align="center">BRAUM</p>
+				</div>
+			<div class="champ">
+					<img class="champ-pic" src="champions/pantheon.jpg" alt="pic">
+					<p align="center">PANTHEON</p>
+			</div>
+			</div>
+		</div>
 	</div>
-		<footer><p>
-			Mercedes-Benz AG
-<br>Nitu Mario
-<br>70372 Stuttgart
-<br>Germania
-<br>Tel.: +49 7 11 17-0
-<br>E-mail: mario.nitu225200@gmail.com</p>
-	<div style="width: 75%"></div> <img src="mercedes-benz-logo.svg"></footer>
+	<div class="final">
+		<div><a href="#"><p class="link-final">BACK TO THE TOP &#8593</p></a></div>
+	</div>
+	<footer>
+		<p>
+			&#169; 2022 ELIXIR.GG. ELIXIR.GG isn’t endorsed by Riot Games and doesn’t reflect the views or opinions of Riot Games or anyone officially involved in producing or managing League of Legends. League of Legends and Riot Games are trademarks or registered trademarks of Riot Games, Inc. League of Legends &#169; Riot Games, Inc.
+		</p>
+		<div style="width: 10%"></div>
+		<div>
+			<h1>ELIXIR.GG</h1>
+			<p style="margin-top: 0px; font-size: 20px;">alexdan@elixir.gg <br> +40764469135</p>
+		</div>
+	</footer>
 </body>
-	
 </html>
-
