@@ -13,7 +13,7 @@ html{
 }
 body{
     margin: 0px;
-    background-color: #fcf0f5;
+    background-color: #fcf7fa;
     height: 100vh;
     padding-bottom: 50px;
 }
@@ -54,13 +54,11 @@ h1, h2, h3, p{
     flex-direction: column;
     width: 33%;
 }
-.xiib{
-    font-weight: 900;
-    position: fixed;
-    font-size: 30px;
-    top: 10px;
-    left: 5px;
-    color: rgb(237, 131, 149);
+.B{
+    text-align: center;
+    font-size: 26px;
+    font-weight: 300;
+    margin-top: 5px;
 }
 @media all and (max-width: 1000px){
     .tabel-dreapta{
@@ -72,5 +70,8 @@ h1, h2, h3, p{
     }
     .phone img{
         margin: 10px 20px;
+    }
+    .text a, .text p{
+        font-size: 35px;
     }
 }
