@@ -13,8 +13,9 @@ html{
 }
 body{
     margin: 0px;
-    background-color: #e7edf2;
+    background-color: #fcf7fa;
     height: 100vh;
+    padding-bottom: 50px;
 }
 .text{
     display:flex;
@@ -22,15 +23,44 @@ body{
     align-content: center;
     justify-content: center;
 }
+#videoclip{
+    font-weight: 900;
+    text-decoration: underline;
+}
 .text a, .text p{
     text-decoration: none;
     color: black;
     font-size: 48px;
 }
-#videoclip{
-    font-weight: 900;
-    text-decoration: underline;
+.phone{
+    display: none;
 }
 h1, h2, h3, p{
     margin: 0;
+}
+.tabel-dreapta{
+    display:flex;
+    width: 100%;
+    padding: 0 50px;
+}
+.B{
+    text-align: center;
+    font-size: 26px;
+    font-weight: 300;
+    margin-top: 5px;
+}
+@media all and (max-width: 1000px){
+    .tabel-dreapta{
+        display: none;
+    }
+    .phone{
+        display: flex;
+        flex-direction: column;
+    }
+    .phone img{
+        margin: 10px 20px;
+    }
+    .text a, .text p{
+        font-size: 35px;
+    }
 }
