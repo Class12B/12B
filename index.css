@@ -13,11 +13,27 @@ html{
 }
 body{
     margin: 0px;
-    background-color: #16161a;
+    background-color: #ffd5e6;
     height: 100vh;
+    padding-bottom: 50px;
 }
 .text{
     display:flex;
+    margin-top: 20px;
+    align-content: center;
+    justify-content: center;
+}
+#galerie{
+    font-weight: 900;
+    text-decoration: underline;
+}
+.text a, .text p{
+    text-decoration: none;
+    color: black;
+    font-size: 48px;
+}
+.phone{
+    display: none;
 }
 h1, h2, h3, p{
     margin: 0;
@@ -27,9 +43,10 @@ h1, h2, h3, p{
     width: 100%;
     padding: 0 50px;
 }
+
 .column-dr img{
     margin-top: 20px;
-    border-radius: 10px;
+    border-radius: 2px;
 }
 .column-dr{
     padding-right: 20px;
@@ -37,5 +54,23 @@ h1, h2, h3, p{
     flex-direction: column;
     width: 33%;
 }
-@media all and (max-width: 620px){
+.xiib{
+    font-weight: 900;
+    position: fixed;
+    font-size: 30px;
+    top: 10px;
+    left: 5px;
+    color: rgb(237, 131, 149);
+}
+@media all and (max-width: 1000px){
+    .tabel-dreapta{
+        display: none;
+    }
+    .phone{
+        display: flex;
+        flex-direction: column;
+    }
+    .phone img{
+        margin: 10px 20px;
+    }
 }
