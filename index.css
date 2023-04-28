@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@keyframes ripple {
+    to {
+      transform: scale(4);
+      opacity: 0;
+    }
+}
 html{
     scroll-behavior: smooth;
 }
@@ -53,14 +59,33 @@ body{
     display: flex;
 }
 .butoane a{
+    position: relative;
+    overflow: hidden;
     font-size: 25px;
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
+
+    border: solid;
+    border-color: #000;
+    border-width: 2px;
     background-color: #000;
-    padding: 10px 30px;
+    padding: 10px 25px;
     border-radius: 5px;
 }
 .butoane a:hover{
     color: #000;
-    background-color: #fff;
+    background-color: transparent;
+
+}
+@media all and (max-width: 1000px){
+    .child{
+        height: 70%;
+    }
+    .text{
+        font-size: 150px;
+    }
+    .butoane a{
+        font-size: 25px;
+        padding: 7px 18px;
+    }
 }
