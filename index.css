@@ -1,77 +1,66 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 html{
     scroll-behavior: smooth;
 }
 :root{
-    --fontSansSerif: 'Inter';
+    --fontSansSerif: 'Montserrat';
 }
 *{
 	box-sizing: border-box;
     font-family: var(--fontSansSerif);
     font-weight: 500;
-    transition: all 0.5s;
+    transition: all 0.2s;
 }
 body{
     margin: 0px;
-    background-color: #fcf7fa;
+    /*
+    background-image: url(background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    */
+    justify-content: center;
     height: 100vh;
+    overflow: hidden;
     padding-bottom: 50px;
 }
 .text{
-    display:flex;
-    margin-top: 20px;
-    align-content: center;
-    justify-content: center;
-}
-#galerie{
+    user-select: none;
+    display: flex;
+    color: white;
+    font-size: 200px;
+    margin-bottom: 20px;
     font-weight: 900;
-    text-decoration: underline;
+    background: url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2FkYTBiMzAwNWJkOTllNzBhYmVhMDQzMWE3MGYyNjE5ZjU5MmYxMiZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/yB9J4UWG4Qz7QrTZJB/giphy.gif');
+    background-size: cover;
+    background-clip: text;
+    background-position: 80%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-.text a, .text p{
-    text-decoration: none;
-    color: black;
-    font-size: 48px;
-}
-.phone{
-    display: none;
-}
-h1, h2, h3, p{
-    margin: 0;
-}
-.tabel-dreapta{
-    display:flex;
+.container{
+    position: relative;
+    height: 100%;
     width: 100%;
-    padding: 0 50px;
 }
-
-.column-dr img{
-    margin-top: 20px;
-    border-radius: 2px;
-}
-.column-dr{
-    padding-right: 20px;
-    display:flex;
+.child{
+    height: 60%;
+    display: flex;
     flex-direction: column;
-    width: 33%;
+    justify-content: center;
+    align-items: center;
 }
-.B{
-    text-align: center;
-    font-size: 26px;
-    font-weight: 300;
-    margin-top: 5px;
+.butoane{
+    display: flex;
 }
-@media all and (max-width: 1000px){
-    .tabel-dreapta{
-        display: none;
-    }
-    .phone{
-        display: flex;
-        flex-direction: column;
-    }
-    .phone img{
-        margin: 10px 20px;
-    }
-    .text a, .text p{
-        font-size: 35px;
-    }
+.butoane a{
+    font-size: 25px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+.butoane a:hover{
+    color: #000;
+    background-color: #fff;
 }
