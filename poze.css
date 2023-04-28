@@ -92,6 +92,9 @@ body{
         flex-direction: column;
         padding: 0px 20px;
     }
+    .inapoi-acasa-div{
+        font-size: 12px;
+    }
     #col0 img{
         margin-top: 20px;
     }
