@@ -4,15 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="poze.css">
+    <link rel="stylesheet" href="videostyle.css">
+    <link rel="stylesheet" href="navicon.css">
     <link rel="icon" type="image/x-icon" href="logo.png">
-    <title>12B : Poze</title>
+    <title>12B Video</title>
 </head>
 <body>
-    <p style="text-align: center;">not ready yet...</p>
-    <div style="display:flex; align-content: center; justify-content: center;">
-        <a style="text-decoration: none; background-color: #000; color: white; padding: 10px 20px;" href="index.html">ACASA</a>
+    <div onclick="sidenav()" class="hamburger" id="hamburger-1">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
     </div>
-
+    <div id="sidenav" class="sidenav">
+        <a href="index.html">ACASA</a>
+        <a href="poze.html">POZE</a>
+    </div>
+    <div class="inapoi-acasa-div">
+        <a class="link" href="index.html">Acasa</a>
+        <a class="link" href="poze.html">Poze</a>
+    </div>
+    <div class="video-box">
+        <video id="video" controls src="video/vid (1).mp4"></video>
+    </div>
+    <div class="next" onclick="nextVid()">
+        <p style="display: flex; margin: 0px;">&gt; </p>
+    </div>
+    <div class="prev" onclick="prevVid()">
+        <p style="display: flex; margin: 0px;">&lt; </p>
+    </div>
+    <div class="counter">
+        <p id="count">1</p>
+        <p id="maxnumber">/18</p>
+    </div>
+    <script src="poze.js"></script>
 </body>
 </html>

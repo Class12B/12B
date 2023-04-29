@@ -70,6 +70,10 @@ body{
     color: #000;
     background-color: transparent;
 }
+.butoane a:active{
+    color: #000;
+    background-color: transparent;
+}
 @media all and (max-width: 1000px){
     .child{
         height: 70%;

@@ -1,5 +1,6 @@
 let active = false;
-
+let vidNum = 1;
+let max = 18;
 function sidenav(){
     toggle();
     if (active){
@@ -21,24 +22,43 @@ function toggle(){
     element.classList.toggle("is-active");
 }
 function poze(){
-    for(let i=1; i < 47; i++){
+    for(let i=1; i < 52; i++){
         let img = document.createElement('img');
-        img.src = "images/pic" + i + ".jpg";
+        img.src = "images/pic (" + i + ").jpg";
         document.getElementById("col1").appendChild(img);
     }
-    for(let i=47; i < 86; i++){
+    for(let i=52; i < (98); i++){
         let img = document.createElement('img');
-        img.src = "images/pic" + i + ".jpg";
+        img.src = "images/pic (" + i + ").jpg";
         document.getElementById("col2").appendChild(img);
     }
-    for(let i=86; i < 131; i++){
+    for(let i=(98); i < 147; i++){
         let img = document.createElement('img');
-        img.src = "images/pic" + i + ".jpg";
+        img.src = "images/pic (" + i + ").jpg";
         document.getElementById("col3").appendChild(img);
     }
-    for(let i=1; i < 131; i++){
+    for(let i=1; i < 147; i++){
         let img = document.createElement('img');
-        img.src = "images/pic" + i + ".jpg";
+        img.src = "images/pic (" + i + ").jpg";
         document.getElementById("col0").appendChild(img);
     }
+}
+function nextVid(){
+    if(vidNum < max){
+        vidNum = vidNum+1;
+        let video = document.getElementById("video");
+        let p = document.getElementById("count");
+        p.innerText = vidNum;
+        video.src="video/vid ("+vidNum+").mp4";
+    }
+}
+function prevVid(){
+    if (vidNum>1){
+        vidNum = vidNum-1;
+        let video = document.getElementById("video");
+        let p = document.getElementById("count");
+        p.innerText = vidNum;
+        video.src="video/vid ("+vidNum+").mp4";
+    }
+
 }

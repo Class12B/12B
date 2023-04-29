@@ -40,6 +40,7 @@
     transform: translateY(-13px) rotate(-45deg);
 }
 .sidenav {
+    display: none;
     height: 100%;
     width: 0;
     position: fixed;
@@ -67,4 +68,8 @@
     .hamburger{
         display: block;
     }
+    .sidenav{
+        display: block;
+    }
+
 }
