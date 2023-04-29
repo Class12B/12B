@@ -85,14 +85,18 @@ body{
     border: solid;
     border-width: 2px;
     border-color: black;
+    white-space: nowrap;
 }
 @media all and (max-width: 1000px){
+    .link{
+        display: none;
+    }
     #col0{
         display: flex;
         flex-direction: column;
         padding: 0px 20px;
     }
-    .inapoi-acasa-div{
+    .inapoi-acasa-div a{
         font-size: 12px;
     }
     #col0 img{

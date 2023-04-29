@@ -1,3 +1,25 @@
+let active = false;
+
+function sidenav(){
+    toggle();
+    if (active){
+        closeNav();
+    } else {
+        openNav();
+    }
+}
+function openNav() {
+    document.getElementById("sidenav").style.width = "200px";
+    active = true;
+}
+function closeNav() {
+    document.getElementById("sidenav").style.width = "0px";
+    active = false;
+}
+function toggle(){
+    let element = document.getElementById("hamburger-1")
+    element.classList.toggle("is-active");
+}
 function poze(){
     for(let i=1; i < 47; i++){
         let img = document.createElement('img');
