@@ -2,6 +2,11 @@
 html{
     scroll-behavior: smooth;
 }
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    max-height: 100%;
+}
 :root{
     --fontSansSerif: 'Montserrat';
 }
@@ -21,6 +26,7 @@ body{
     overflow: hidden;
     justify-content: center;
     height: 100vh;
+
     margin-bottom: 100px;
 }
 .inapoi-acasa-div{
@@ -45,6 +51,9 @@ body{
     display: flex;
     align-content: center;
     justify-content: center;
+}
+.video-box video{
+    height: 100%;
 }
 .next , .prev{
     user-select: none;

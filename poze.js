@@ -1,6 +1,6 @@
 let active = false;
 let vidNum = 1;
-let max = 18;
+let max = 17;
 function sidenav(){
     toggle();
     if (active){
