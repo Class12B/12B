@@ -1,6 +1,8 @@
 let active = false;
 let vidNum = 1;
 let max = 17;
+
+//sidebar navigation < 1000px
 function sidenav(){
     toggle();
     if (active){
@@ -21,6 +23,8 @@ function toggle(){
     let element = document.getElementById("hamburger-1")
     element.classList.toggle("is-active");
 }
+
+//img element creator onload
 function poze(){
     for(let i=1; i < 52; i++){
         let img = document.createElement('img');
@@ -43,6 +47,8 @@ function poze(){
         document.getElementById("col0").appendChild(img);
     }
 }
+
+//video slideshow control
 function nextVid(){
     if(vidNum < max){
         vidNum = vidNum+1;
@@ -62,3 +68,12 @@ function prevVid(){
     }
 
 }
+function playVid(){
+    let vid = document.getElementById("video");
+    vid.play(); 
+} 
+  
+function pauseVid(){ 
+    let vid = document.getElementById("video");
+    vid.pause(); 
+} 

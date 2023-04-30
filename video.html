@@ -24,7 +24,7 @@
         <a class="link" href="poze.html">Poze</a>
     </div>
     <div class="video-box">
-        <video id="video" controls src="video/vid (1).mp4"></video>
+        <video id="video" src="video/vid (1).mp4"></video>
     </div>
     <div class="next" onclick="nextVid()">
         <p style="display: flex; margin: 0px;">&gt; </p>
@@ -35,6 +35,10 @@
     <div class="counter">
         <p id="count">1</p>
         <p id="maxnumber">/17</p>
+    </div>
+    <div onclick="control()" class="controls-div">
+        <p id="controls1" onclick="playVid()" style="margin-right: 5px">PLAY</p>
+        <p id="controls2" onclick="pauseVid()" style="margin-left: 5px">PAUSE</p>
     </div>
     <script src="poze.js"></script>
 </body>

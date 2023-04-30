@@ -55,7 +55,6 @@ body{
     justify-content: center;
 }
 .video-box video{
-
     height: 100%;
 }
 .next , .prev{
@@ -95,6 +94,28 @@ body{
     font-weight: 600;
     display: flex;
     margin: 0px;
+}
+.controls-div{
+    display: flex;
+    user-select: none;
+    position: fixed;
+    left: 50%;
+    bottom: 30px;
+    transform: translate(-50%, -50%);
+}
+.controls-div p:hover{
+    background-color: rgba(0, 0, 0, 1);
+    cursor: pointer;
+}
+.controls-div p{
+    padding: 10px 15px;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    color: #fff;
+    margin: 0px;
+    display: flex;
+    
 }
 @media all and (max-width: 1000px){
     .link{
