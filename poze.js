@@ -1,6 +1,6 @@
 let active = false;
 let vidNum = 1;
-let max = 17;
+let max = 20;
 
 //sidebar navigation < 1000px
 function sidenav(){
@@ -26,24 +26,28 @@ function toggle(){
 
 //img element creator onload
 function poze(){
-    for(let i=1; i < 52; i++){
+    for(let i=1; i < 55; i++){
         let img = document.createElement('img');
         img.src = "images/pic (" + i + ").jpg";
+        img.alt = "&#10063; image";
         document.getElementById("col1").appendChild(img);
     }
-    for(let i=52; i < (98); i++){
+    for(let i=55; i < (109); i++){
         let img = document.createElement('img');
         img.src = "images/pic (" + i + ").jpg";
+        img.alt = "&#10063; image";
         document.getElementById("col2").appendChild(img);
     }
-    for(let i=(98); i < 147; i++){
+    for(let i=(110); i < 165; i++){
         let img = document.createElement('img');
         img.src = "images/pic (" + i + ").jpg";
+        img.alt = "&#10063; image";
         document.getElementById("col3").appendChild(img);
     }
-    for(let i=1; i < 147; i++){
+    for(let i=1; i < 165; i++){
         let img = document.createElement('img');
         img.src = "images/pic (" + i + ").jpg";
+        img.alt = "&#10063; image";
         document.getElementById("col0").appendChild(img);
     }
 }
